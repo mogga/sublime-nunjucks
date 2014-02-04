@@ -10,10 +10,13 @@
       <string>nunjs</string>
       <string>html</string>
     </array>
+
     <key>name</key>
     <string>Nunjucks</string>
+
     <key>patterns</key>
     <array>
+
       <dict>
         <key>begin</key>
         <string>{% comment %}</string>
@@ -22,6 +25,7 @@
         <key>name</key>
         <string>comment.block.nunjucks</string>
       </dict>
+
       <dict>
         <key>begin</key>
         <string>{#</string>
@@ -30,6 +34,7 @@
         <key>name</key>
         <string>comment.line.number-sign.nunjucks</string>
       </dict>
+
       <dict>
         <key>begin</key>
         <string>{{</string>
@@ -53,9 +58,13 @@
           </dict>
         </array>
       </dict>
+
       <dict>
         <key>begin</key>
-        <string>{%</string>
+        <array>
+          <string>{%</string>
+          <string>{%-</string>
+        </array>
         <key>captures</key>
         <dict>
           <key>0</key>
@@ -65,7 +74,10 @@
           </dict>
         </dict>
         <key>end</key>
+        <array>
         <string>%}</string>
+        <string>-%}</string>
+        </array>
         <key>name</key>
         <string>storage.type.templatetag.nunjucks</string>
         <key>patterns</key>
@@ -80,6 +92,7 @@
           </dict>
         </array>
       </dict>
+
       <dict>
         <key>begin</key>
         <string>(&lt;)([a-zA-Z0-9:]++)(?=[^&gt;]*&gt;&lt;/\2&gt;)</string>
@@ -136,6 +149,7 @@
           </dict>
         </array>
       </dict>
+
       <dict>
         <key>begin</key>
         <string>(&lt;\?)(xml)</string>
@@ -172,6 +186,7 @@
           </dict>
         </array>
       </dict>
+
       <dict>
         <key>begin</key>
         <string>&lt;!--</string>
@@ -201,6 +216,7 @@
           </dict>
         </array>
       </dict>
+
       <dict>
         <key>begin</key>
         <string>&lt;!</string>
@@ -259,6 +275,7 @@
           </dict>
         </array>
       </dict>
+
       <dict>
         <key>include</key>
         <string>#embedded-code</string>
@@ -387,6 +404,7 @@
           </dict>
         </array>
       </dict>
+
       <dict>
         <key>begin</key>
         <string>(?:^\s+)?(&lt;)((?i:script))\b(?![^&gt;]*/&gt;)</string>
