@@ -1,4 +1,4 @@
-sublime-nunjucks
-================
+# sublime-nunjucks
 
-Sublime Text syntax for Nunjucks template language
+A Nunjucks syntax definition specifically for Sublime Text.
+
