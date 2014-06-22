@@ -61,10 +61,7 @@
 
       <dict>
         <key>begin</key>
-        <array>
-          <string>{%</string>
-          <string>{%-</string>
-        </array>
+        <string>\{\{-?</string>
         <key>captures</key>
         <dict>
           <key>0</key>
@@ -74,10 +71,7 @@
           </dict>
         </dict>
         <key>end</key>
-        <array>
-        <string>%}</string>
-        <string>-%}</string>
-        </array>
+        <string>-?\}\}</string>
         <key>name</key>
         <string>storage.type.templatetag.nunjucks</string>
         <key>patterns</key>
