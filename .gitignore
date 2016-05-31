@@ -8,7 +8,8 @@ site/online/**/*
 .DS_Store
 Thumbs.db
 npm-debug.log
-*.sublime-*
+*.sublime-project
+*.sublime-workspace
 *.zip
 *.gzip
 *.gz
