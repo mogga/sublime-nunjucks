@@ -1,4 +1,3 @@
-# sublime-nunjucks
+# Sublime-nunjucks
 
-A Nunjucks syntax definition specifically for Sublime Text.
-
+A [Nunjucks](https://mozilla.github.io/nunjucks/) syntax definition specifically for Sublime Text 2 and 3.
